@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+   <h1> ระบบบันทึกข้อมูลนักเรียนด้วย Web Apps </h1>
+   <label>เลขประจำตัวนักเรียน:</label>
+       <input type="text" id="ตัวแปร1">
+  <label>ชื่อ-สกุล:</label>
+       <input type="text" id="ตัวแปร2">
+
+<button id = "btn">บันทึกข้อมูล</button>
+  <script>
+    document.getElementById("btn").addEventListener("click",submit);
+    function submit(){
+    var stuid =  document.getElementById("ตัวแปร1").value;
+    var name =  document.getElementById("ตัวแปร2").value;
+    google.script.run.saveData(ตัวแปร1,ตัวแปร2);
+    document.getElementById("ตัวแปร1").value="";
+    document.getElementById("ตัวแปร2").value="";
+      }
+  </script>
+  </body>
+</html>
