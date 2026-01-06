@@ -1,7 +1,6 @@
 function doGet() {
   return HtmlService.createHtmlOutputFromFile("index")
-  return htmlOutput.evaluate()
-}
+  }
 
 function saveData(ตัวแปร1,ตัวแปร2){
   var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
