@@ -14,8 +14,8 @@
   <script>
     document.getElementById("btn").addEventListener("click",submit);
     function submit(){
-    var stuid =  document.getElementById("ตัวแปร1").value;
-    var name =  document.getElementById("ตัวแปร2").value;
+    var ตัวแปร1 =  document.getElementById("ตัวแปร1").value;
+    var ตัวแปร2 =  document.getElementById("ตัวแปร2").value;
     google.script.run.saveData(ตัวแปร1,ตัวแปร2);
     document.getElementById("ตัวแปร1").value="";
     document.getElementById("ตัวแปร2").value="";
