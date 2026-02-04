@@ -2,8 +2,8 @@ function doGet() {
   return HtmlService.createHtmlOutputFromFile("index")
   }
 
-function saveData(ตัวแปร1,ตัวแปร2){
+function saveData(ตัวแปร 1,ตัวแปร 2){
   var ss = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  ss.appendRow([new Date(),ตัวแปร1,ตัวแปร2,"'"]);
+  ss.appendRow([new Date(),ตัวแปร 1,ตัวแปร 2,"'"]);
 }
 
