@@ -6,19 +6,19 @@
   <body>
    <h1> ระบบบันทึกข้อมูลนักเรียนด้วย Web Apps </h1>
    <label>เลขประจำตัวนักเรียน:</label>
-       <input type="text" id="ตัวแปร1">
+       <input type="text" id="ตัวแปร 1">
   <label>ชื่อ-สกุล:</label>
-       <input type="text" id="ตัวแปร2">
+       <input type="text" id="ตัวแปร 2">
 
 <button id = "btn">บันทึกข้อมูล</button>
   <script>
     document.getElementById("btn").addEventListener("click",submit);
     function submit(){
-    var ตัวแปร1 =  document.getElementById("ตัวแปร1").value;
-    var ตัวแปร2 =  document.getElementById("ตัวแปร2").value;
-    google.script.run.saveData(ตัวแปร1,ตัวแปร2);
-    document.getElementById("ตัวแปร1").value="";
-    document.getElementById("ตัวแปร2").value="";
+    var ตัวแปร 1 =  document.getElementById("ตัวแปร 1").value;
+    var ตัวแปร 2 =  document.getElementById("ตัวแปร 2").value;
+    google.script.run.saveData(ตัวแปร 1,ตัวแปร 2);
+    document.getElementById("ตัวแปร 1").value="";
+    document.getElementById("ตัวแปร 2").value="";
       }
   </script>
   </body>
